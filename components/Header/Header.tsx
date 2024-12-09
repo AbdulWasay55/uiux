@@ -23,7 +23,9 @@ const Header = () => {
                     <p>Eng</p>
                     <IoIosArrowDown className='text-white w-4 h-4'/>
                 </div>
-                <p>Faqs</p>
+                <Link href={"/Faq"}>
+                Faqs
+                </Link>
                 <div className='w-[87px] h-[17px] flex gap-[6px] items-center'>
                     <IoAlertCircleOutline/>
                     <p>Need Help</p>
@@ -47,13 +49,13 @@ const Header = () => {
             </div>
         </div>
         {/* nav bar section  */}
-        <div className='w-full h-[74px] flex justify-between py-[14px] px-[300px] items-center ' >
+        <div className='w-full h-[74px] flex justify-between py-[14px] px-[300px] items-center border-b border-[#E1E3E5] ' >
             <div className='w-[339px] h-[15px] flex gap-8 text-[#636270] text-[14px] leading-[15.4px]'>
                 <Link href={"/"} className='text-[#007580]'>Home</Link>
                 <Link href={"/Shop"}>Shop</Link>
                 <Link href={"/Product"}>Product</Link>
-                <Link href={"#"}>Pages</Link>
-                <Link href={"#"}>About</Link>
+                <Link href={"/Contact"}>Contact</Link>
+                <Link href={"/About"}>About</Link>
             </div>
             <div className='w-[168px] h-[15px] flex gap-2 text-[#636270] text-[14px] leading-[15.4px]'>
                 <p>Contact:</p>
